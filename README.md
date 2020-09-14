@@ -2,9 +2,8 @@
 Kotlin Tutorials
 
 # Overview
-## Course introduction, prequisites and software required
 
-# Installation
-## Install required softwares for Windows, MAC and Linux ( Ubuntu )
-## Getting Started with Kotlin Programming
-## Run your first app in Kotlin
+### Getting Started with Kotlin Programming
+1. Activities
+2. XML layouts.
+3. Data Shared implicitly and explicitly.
