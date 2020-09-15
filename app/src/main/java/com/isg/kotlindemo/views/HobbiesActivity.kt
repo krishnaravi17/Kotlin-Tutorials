@@ -1,8 +1,9 @@
-package com.isg.kotlindemo
+package com.isg.kotlindemo.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.isg.kotlindemo.R
 import com.isg.kotlindemo.adapter.AdapterHobbies
 import com.isg.kotlindemo.model.Supplier
 import kotlinx.android.synthetic.main.activity_hobbies.*

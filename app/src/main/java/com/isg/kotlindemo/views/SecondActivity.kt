@@ -1,7 +1,9 @@
-package com.isg.kotlindemo
+package com.isg.kotlindemo.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.isg.kotlindemo.R
+import com.isg.kotlindemo.helper.showToast
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
@@ -12,5 +14,7 @@ class SecondActivity : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         val msg = bundle!!.getString("user_msg")
         textView.text = msg
+
+        showToast(msg.toString())
     }
 }

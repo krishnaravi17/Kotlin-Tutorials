@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.list_item.view.*
 class AdapterHobbies(val context: Context, private val hobbies: List<HobbiesModel>) :
     RecyclerView.Adapter<AdapterHobbies.MyViewHolder>() {
 
-    companion object {
+    companion object {//not used
         val TAG: String = AdapterHobbies::class.java.simpleName
     }
 

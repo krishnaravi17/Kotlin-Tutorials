@@ -1,10 +1,10 @@
-package com.isg.kotlindemo
+package com.isg.kotlindemo.views
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import android.widget.Toast.LENGTH_LONG
+import com.isg.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -23,11 +23,13 @@ class MainActivity : AppCompatActivity() {
 
             val strFromUser = et_anything.text.toString();
 
-            Toast.makeText(this, strFromUser, Toast.LENGTH_LONG).show();
+            strFromUser?.let {
+                Toast.makeText(this, strFromUser, Toast.LENGTH_LONG).show();
 
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("user_msg", strFromUser)
-            startActivity(intent)
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("user_msg", strFromUser)
+                startActivity(intent)
+            }
 
         }
 
